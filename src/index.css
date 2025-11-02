@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './styles/animations.css';
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body antialiased;
+    @apply bg-gradient-to-br from-pink-50 via-cream-50 to-rose-50;
+    @apply text-gray-900;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-pink-50;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-pink-400 to-rose-500 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-pink-500 to-rose-600;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, 
+      rgba(255, 182, 193, 0.2) 0%, 
+      rgba(255, 107, 157, 0.15) 50%, 
+      rgba(230, 57, 119, 0.1) 100%
+    );
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-pink-500 via-rose-500 to-pink-600 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-full;
+    @apply hover:from-pink-600 hover:to-rose-600 hover:scale-105 hover:shadow-glow-pink;
+    @apply transition-all duration-300 ease-out;
+    @apply focus:outline-none focus:ring-4 focus:ring-pink-300;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 glass-pink text-pink-600 font-semibold rounded-full;
+    @apply hover:bg-pink-100 hover:scale-105 hover:shadow-glass-pink;
+    @apply transition-all duration-300 ease-out;
+    @apply focus:outline-none focus:ring-4 focus:ring-pink-200;
+  }
+
+  .btn-outline {
+    @apply px-8 py-4 border-2 border-pink-400 text-pink-600 font-semibold rounded-full;
+    @apply hover:bg-pink-400 hover:text-white hover:scale-105;
+    @apply transition-all duration-300 ease-out;
+    @apply focus:outline-none focus:ring-4 focus:ring-pink-300;
+  }
+
+  .card-glass {
+    @apply glass-pink rounded-2xl p-6 hover:scale-105 hover:shadow-glass-lg;
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .heading-primary {
+    @apply text-4xl md:text-5xl lg:text-6xl font-display font-bold;
+    @apply text-gradient-pink;
+  }
+
+  .heading-secondary {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold;
+    @apply text-gradient-pink;
+  }
+
+  .heading-tertiary {
+    @apply text-2xl md:text-3xl lg:text-4xl font-display font-semibold;
+    @apply text-pink-600;
+  }
+
+  .text-body {
+    @apply text-base md:text-lg text-gray-700 leading-relaxed;
+  }
+
+  .parallax-section {
+    @apply relative overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  .animation-delay-800 {
+    animation-delay: 0.8s;
+  }
+
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .gradient-shimmer {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .music-wave {
+    background: linear-gradient(
+      90deg,
+      #FF6B9D 0%,
+      #FF8FA8 15%,
+      #FFB0C1 30%,
+      #FF8FA8 45%,
+      #FF6B9D 60%,
+      #E63977 75%,
+      #FF6B9D 90%,
+      #FFB0C1 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.glow-animation {
+  animation: glow-pink 3s ease-in-out infinite alternate;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(255, 107, 157, 0.3);
+}
+
+.image-blur-load {
+  filter: blur(10px);
+  transition: filter 0.5s ease;
+}
+
+.image-blur-load.loaded {
+  filter: blur(0);
+}
