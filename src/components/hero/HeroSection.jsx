@@ -140,26 +140,20 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="relative"
             >
-              <div className="relative w-full max-w-lg mx-auto">
-                <motion.div
-                  animate={{ 
-                    rotate: [0, 5, 0, -5, 0],
-                  }}
-                  transition={{ 
-                    duration: 6,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                  className="relative z-10"
-                >
-                  <div className="aspect-square rounded-full overflow-hidden border-8 border-white shadow-2xl">
+              <div className="relative w-full max-w-lg mx-auto group">
+                <div className="relative z-10">
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    className="aspect-square rounded-full overflow-hidden border-8 border-white shadow-2xl"
+                  >
                     <img 
                       src={singerImages.about}
                       alt="Rajeshwari Pawar"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </div>
 
                 <motion.div
                   animate={{ 
@@ -175,43 +169,25 @@ const HeroSection = () => {
                 />
 
                 <motion.div
-                  animate={{ 
-                    rotate: 360
-                  }}
-                  transition={{ 
-                    duration: 20,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                  className="absolute -top-4 -right-4 w-24 h-24 glass-pink rounded-full flex items-center justify-center shadow-glow-pink"
+                  whileHover={{ scale: 1.2, rotate: 360 }}
+                  transition={{ duration: 0.5 }}
+                  className="absolute -top-4 -right-4 w-24 h-24 glass-pink rounded-full flex items-center justify-center shadow-glow-pink cursor-pointer"
                 >
                   <span className="text-3xl">🎤</span>
                 </motion.div>
 
                 <motion.div
-                  animate={{ 
-                    rotate: -360
-                  }}
-                  transition={{ 
-                    duration: 15,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                  className="absolute -bottom-4 -left-4 w-20 h-20 glass-rose rounded-full flex items-center justify-center shadow-glow-pink"
+                  whileHover={{ scale: 1.2, rotate: -360 }}
+                  transition={{ duration: 0.5 }}
+                  className="absolute -bottom-4 -left-4 w-20 h-20 glass-rose rounded-full flex items-center justify-center shadow-glow-pink cursor-pointer"
                 >
                   <span className="text-2xl">🎵</span>
                 </motion.div>
 
                 <motion.div
-                  animate={{ 
-                    y: [0, -10, 0]
-                  }}
-                  transition={{ 
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                  className="absolute top-1/4 -right-8 w-16 h-16 glass-pink rounded-full flex items-center justify-center shadow-glass"
+                  whileHover={{ scale: 1.2, y: -10 }}
+                  transition={{ duration: 0.3 }}
+                  className="absolute top-1/4 -right-8 w-16 h-16 glass-pink rounded-full flex items-center justify-center shadow-glass cursor-pointer"
                 >
                   <span className="text-xl">🎶</span>
                 </motion.div>
