@@ -32,9 +32,6 @@ const AwardCard = ({ award, index }) => {
             <h3 className="text-lg font-display font-bold text-pink-600 group-hover:text-pink-700 transition-colors">
               {award.title}
             </h3>
-            <span className="px-3 py-1 bg-gradient-to-r from-pink-200 to-rose-200 text-pink-700 text-xs font-semibold rounded-full">
-              {award.year}
-            </span>
           </div>
 
           <p className="text-sm text-gray-600 mb-2 font-medium">

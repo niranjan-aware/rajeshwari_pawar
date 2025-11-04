@@ -17,7 +17,7 @@ const AwardsSection = () => {
     },
     {
       icon: FaMedal,
-      number: 4,
+      number: 5,
       suffix: '',
       label: 'Major Honors 2024-25',
       color: 'from-rose-400 to-pink-500'
@@ -39,7 +39,7 @@ const AwardsSection = () => {
   ]
 
   return (
-    <section className="section-container relative overflow-hidden">
+    <section id="awards" className="section-container relative overflow-hidden">
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-pink-300 rounded-full blur-3xl opacity-20 -z-10 animate-float" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-rose-300 rounded-full blur-3xl opacity-20 -z-10 animate-float-delayed" />
 
@@ -91,7 +91,7 @@ const AwardsSection = () => {
           <p className="text-gray-700 leading-relaxed">
             Recognized for outstanding contribution to Indian music and cinema with multiple prestigious awards 
             including the Balgandharva Vishesh Puraskar, Dadasaheb Phalke Cine Award, Maharashtra Ratna Puraskar, 
-            and Dhar Kulbhushan Puraskar.
+            Dhar Kulbhushan Puraskar, and Tulja Bhawani Yuva Ratna Puraskar.
           </p>
         </div>
       </ScrollReveal>

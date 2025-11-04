@@ -1,39 +1,43 @@
 export const awardsData = [
   {
-    id: 'dhar-kulbhushan-2025',
+    id: 'dhar-kulbhushan',
     title: 'Dhar Kulbhushan Puraskar',
-    year: '2025',
     organization: 'Music Foundation',
     description: 'Recognition for outstanding contribution to Indian music',
     icon: '🏆',
     category: 'music'
   },
   {
-    id: 'balgandharva-2024',
+    id: 'balgandharva',
     title: 'Balgandharva Vishesh Puraskar',
-    year: '2024',
     organization: 'Marathi Cultural Association',
     description: 'Special award for excellence in playback singing',
     icon: '🎵',
     category: 'special'
   },
   {
-    id: 'dadasaheb-2024',
+    id: 'dadasaheb',
     title: 'Dadasaheb Phalke Cine Award',
-    year: '2024',
     organization: 'Indian Cinema Foundation',
     description: 'Awarded for remarkable performance in cinema',
     icon: '🎬',
     category: 'cinema'
   },
   {
-    id: 'maharashtra-ratna-2024',
+    id: 'maharashtra-ratna',
     title: 'Maharashtra Ratna Puraskar',
-    year: '2024',
     organization: 'Government of Maharashtra',
     description: 'State honor for contribution to arts and culture',
     icon: '⭐',
     category: 'state'
+  },
+  {
+    id: 'tulja-bhawani-yuva-ratna',
+    title: 'Tulja Bhawani Yuva Ratna Puraskar',
+    organization: 'Cultural Foundation',
+    description: 'Youth excellence award for cultural contribution',
+    icon: '🌟',
+    category: 'special'
   }
 ]
 
