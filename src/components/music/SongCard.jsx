@@ -1,9 +1,17 @@
 import { motion } from 'framer-motion'
-import { FaPlay, FaYoutube } from 'react-icons/fa'
+import { FaPlay, FaYoutube, FaInstagram } from 'react-icons/fa'
 import { useState } from 'react'
 
 const SongCard = ({ song, onClick }) => {
   const [imageLoaded, setImageLoaded] = useState(false)
+
+  const handleClick = () => {
+    if (song.isInstagram && song.instagramUrl) {
+      window.open(song.instagramUrl, '_blank')
+    } else {
+      onClick()
+    }
+  }
 
   return (
     <motion.div
@@ -13,7 +21,7 @@ const SongCard = ({ song, onClick }) => {
       transition={{ duration: 0.5 }}
       whileHover={{ y: -10 }}
       className="group cursor-pointer"
-      onClick={onClick}
+      onClick={handleClick}
     >
       <div className="glass-pink rounded-2xl overflow-hidden shadow-glass hover:shadow-glow-pink transition-all duration-300">
         <div className="relative aspect-video overflow-hidden">
@@ -32,15 +40,26 @@ const SongCard = ({ song, onClick }) => {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             whileHover={{ scale: 1.2 }}
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-2xl group-hover:bg-pink-500 transition-colors duration-300"
+            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-2xl ${
+              song.isInstagram ? 'group-hover:bg-pink-500' : 'group-hover:bg-pink-500'
+            } transition-colors duration-300`}
           >
-            <FaPlay className="text-pink-600 group-hover:text-white text-2xl ml-1" />
+            <FaPlay className={`${song.isInstagram ? 'text-pink-600' : 'text-pink-600'} group-hover:text-white text-2xl ml-1`} />
           </motion.div>
 
           <div className="absolute top-4 right-4">
             <div className="px-3 py-1 glass-strong rounded-full flex items-center gap-2">
-              <FaYoutube className="text-red-500" />
-              <span className="text-white text-xs font-semibold">YouTube</span>
+              {song.isInstagram ? (
+                <>
+                  <FaInstagram className="text-pink-500" />
+                  <span className="text-white text-xs font-semibold">Instagram</span>
+                </>
+              ) : (
+                <>
+                  <FaYoutube className="text-red-500" />
+                  <span className="text-white text-xs font-semibold">YouTube</span>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -53,6 +72,12 @@ const SongCard = ({ song, onClick }) => {
           {song.movie && (
             <p className="text-sm text-gray-600 mb-2">
               From: <span className="font-semibold text-pink-500">{song.movie}</span>
+            </p>
+          )}
+
+          {song.label && (
+            <p className="text-sm text-gray-600 mb-2">
+              Label: <span className="font-semibold text-pink-500">{song.label}</span>
             </p>
           )}
           
@@ -74,7 +99,7 @@ const SongCard = ({ song, onClick }) => {
               whileTap={{ scale: 0.95 }}
               className="px-4 py-2 bg-gradient-to-r from-pink-500 to-rose-500 text-white text-sm font-semibold rounded-full hover:shadow-glow-pink transition-all duration-300"
             >
-              Watch Now
+              {song.isInstagram ? 'View on Instagram' : 'Watch Now'}
             </motion.button>
           </div>
         </div>

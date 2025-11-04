@@ -4,7 +4,7 @@ import SectionHeading from '../ui/SectionHeading'
 import SongCard from './SongCard'
 import VideoModal from './VideoModal'
 import ScrollReveal from '../common/ScrollReveal'
-import { FaMusic, FaFilm, FaTv, FaGlobeAsia } from 'react-icons/fa'
+import { FaMusic, FaFilm, FaTv, FaGlobeAsia, FaCompactDisc } from 'react-icons/fa'
 import { discographyData, categories, collaborations } from '../../data/songs'
 
 const Discography = () => {
@@ -19,6 +19,7 @@ const Discography = () => {
     all: FaMusic,
     marathi: FaFilm,
     hindi: FaFilm,
+    albums: FaCompactDisc,
     international: FaGlobeAsia,
     tv: FaTv
   }
