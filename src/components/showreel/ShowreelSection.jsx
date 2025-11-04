@@ -141,7 +141,7 @@ const ShowreelSection = () => {
           <div className="mt-12 glass-strong rounded-3xl p-8 text-center">
             <p className="text-lg text-gray-700 leading-relaxed">
               Experience the journey of <span className="font-semibold text-pink-600">1000+ live performances</span> across India, 
-              featuring collaborations with legendary artists and unforgettable moments from reality shows, 
+              featuring collaborations with legendary artists like Amit Kumar, Sumeet Raghavan, Avadhoot Gupte, Shabbir Kumar and unforgettable moments from reality shows, 
               award ceremonies, and concerts.
             </p>
           </div>

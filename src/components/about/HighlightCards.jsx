@@ -7,7 +7,7 @@ const HighlightCards = () => {
     {
       icon: FaMicrophone,
       title: 'Playback Singer',
-      description: 'Featured in major Marathi and Hindi movies with renowned music directors',
+      description: 'Featured in major Marathi `movies with renowned music directors',
       color: 'from-pink-400 to-rose-400'
     },
     {
@@ -24,8 +24,8 @@ const HighlightCards = () => {
     },
     {
       icon: FaTrophy,
-      title: '1000+ Live Shows',
-      description: 'Performed across India as co-singer with Late Bappi Lahiri for 8 years',
+      title: 'Masters in English Literature',
+      description: 'from Pune University',
       color: 'from-rose-500 to-pink-600'
     }
   ]

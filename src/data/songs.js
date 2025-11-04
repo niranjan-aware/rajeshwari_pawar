@@ -255,6 +255,29 @@ export const hindiSongs = [
   }
 ]
 
+export const internationalSongs = [
+  {
+    id: 'international-1',
+    title: 'Tomorrowland Release',
+    artist: 'Rajeshwari Pawar',
+    type: 'International',
+    youtubeId: 'oiHY2EBKmOY',
+    year: '2023',
+    thumbnail: 'https://img.youtube.com/vi/oiHY2EBKmOY/maxresdefault.jpg',
+    category: 'international',
+    description: 'Released at Tomorrowland Festival'
+  },
+  {
+    id: 'this-is-shankara',
+    title: 'This Is Shankara',
+    artist: 'Rajeshwari Pawar',
+    type: 'International',
+    youtubeId: 'F21m8camePk',
+    thumbnail: 'https://img.youtube.com/vi/F21m8camePk/maxresdefault.jpg',
+    category: 'international'
+  }
+]
+
 export const discographyData = [
   {
     id: 'gadbadgeet',
@@ -268,22 +291,12 @@ export const discographyData = [
     thumbnail: 'https://img.youtube.com/vi/YLkSSg97-zU/maxresdefault.jpg',
     category: 'marathi'
   },
-  {
-    id: 'international-1',
-    title: 'Tomorrowland Release',
-    artist: 'Rajeshwari Pawar',
-    type: 'International',
-    youtubeId: 'oiHY2EBKmOY',
-    year: '2023',
-    thumbnail: 'https://img.youtube.com/vi/oiHY2EBKmOY/maxresdefault.jpg',
-    category: 'international',
-    description: 'Released at Tomorrowland Festival'
-  },
   ...latestMovieSongs,
   ...marathiMovieSongs,
   ...hindiSongs,
   ...tvSerialSongs,
-  ...albumSongs
+  ...albumSongs,
+  ...internationalSongs
 ]
 
 export const showreelData = {
