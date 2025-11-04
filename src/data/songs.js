@@ -8,7 +8,7 @@ export const latestMovieSongs = [
     type: 'Duet',
     youtubeId: 'SQahm-u_j9c',
     releaseDate: 'June 27, 2025',
-    thumbnail: 'https://img.youtube.com/vi/SQahm-u_j9c/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/SQahm-u_j9c/hqdefault.jpg',
     category: 'marathi'
   },
   {
@@ -20,7 +20,7 @@ export const latestMovieSongs = [
     type: 'Duet',
     youtubeId: 'wxgP3FoUVAU',
     releaseDate: 'June 27, 2025',
-    thumbnail: 'https://img.youtube.com/vi/wxgP3FoUVAU/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/wxgP3FoUVAU/hqdefault.jpg',
     category: 'marathi'
   },
   {
@@ -32,7 +32,7 @@ export const latestMovieSongs = [
     type: 'Duet',
     youtubeId: 'Op8AAmyLsbc',
     releaseDate: 'June 27, 2025',
-    thumbnail: 'https://img.youtube.com/vi/Op8AAmyLsbc/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/Op8AAmyLsbc/hqdefault.jpg',
     category: 'marathi'
   },
   {
@@ -44,7 +44,7 @@ export const latestMovieSongs = [
     type: 'Duet',
     youtubeId: 'weQQGrF2Usc',
     releaseDate: 'June 27, 2025',
-    thumbnail: 'https://img.youtube.com/vi/weQQGrF2Usc/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/weQQGrF2Usc/hqdefault.jpg',
     category: 'marathi'
   }
 ]
@@ -56,7 +56,7 @@ export const tvSerialSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'TV Serial',
     youtubeId: '8-zU0cJHg7g',
-    thumbnail: 'https://img.youtube.com/vi/8-zU0cJHg7g/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/8-zU0cJHg7g/hqdefault.jpg',
     category: 'tv'
   },
   {
@@ -75,7 +75,7 @@ export const tvSerialSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'TV Serial',
     youtubeId: 'pw1JV_sXRGY',
-    thumbnail: 'https://img.youtube.com/vi/pw1JV_sXRGY/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/pw1JV_sXRGY/hqdefault.jpg',
     category: 'tv'
   },
   {
@@ -108,7 +108,7 @@ export const albumSongs = [
     coSinger: 'Adarsh Shinde',
     type: 'Duet',
     youtubeId: 'Gvw_JlKaVJM',
-    thumbnail: 'https://img.youtube.com/vi/Gvw_JlKaVJM/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/Gvw_JlKaVJM/hqdefault.jpg',
     category: 'albums'
   },
   {
@@ -119,7 +119,7 @@ export const albumSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'Solo',
     youtubeId: 'XR-HRIPmF4c',
-    thumbnail: 'https://img.youtube.com/vi/XR-HRIPmF4c/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/XR-HRIPmF4c/hqdefault.jpg',
     category: 'albums'
   },
   {
@@ -129,7 +129,7 @@ export const albumSongs = [
     coSinger: 'Onkarswaroop, Saurabh Salunke, Suhit Abhyankar',
     type: 'Duet',
     youtubeId: '-MkemdW0lGU',
-    thumbnail: 'https://img.youtube.com/vi/-MkemdW0lGU/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/-MkemdW0lGU/hqdefault.jpg',
     category: 'albums'
   },
   {
@@ -138,7 +138,7 @@ export const albumSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'Solo',
     youtubeId: 'noRhP8UuV20',
-    thumbnail: 'https://img.youtube.com/vi/noRhP8UuV20/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/noRhP8UuV20/hqdefault.jpg',
     category: 'albums'
   },
   {
@@ -148,7 +148,7 @@ export const albumSongs = [
     coSinger: 'Ravindra Khomne',
     type: 'Duet',
     youtubeId: 'cj-IJByJ_Oc',
-    thumbnail: 'https://img.youtube.com/vi/cj-IJByJ_Oc/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/cj-IJByJ_Oc/hqdefault.jpg',
     category: 'albums'
   },
   {
@@ -158,7 +158,7 @@ export const albumSongs = [
     coSinger: 'Onkarswaroop',
     type: 'Duet',
     youtubeId: 'Av6LAHjUfAo',
-    thumbnail: 'https://img.youtube.com/vi/Av6LAHjUfAo/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/Av6LAHjUfAo/hqdefault.jpg',
     category: 'albums'
   },
   {
@@ -168,7 +168,7 @@ export const albumSongs = [
     coSinger: 'Avadhoot Gandhi',
     type: 'Duet',
     youtubeId: '0hSwbL6QgtE',
-    thumbnail: 'https://img.youtube.com/vi/0hSwbL6QgtE/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/0hSwbL6QgtE/hqdefault.jpg',
     category: 'albums'
   },
   {
@@ -177,7 +177,7 @@ export const albumSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'Solo',
     youtubeId: '-zhDu_6eo2o',
-    thumbnail: 'https://img.youtube.com/vi/-zhDu_6eo2o/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/-zhDu_6eo2o/hqdefault.jpg',
     category: 'albums'
   },
   {
@@ -186,7 +186,7 @@ export const albumSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'Solo',
     youtubeId: 'BaTVIQOBB1Q',
-    thumbnail: 'https://img.youtube.com/vi/BaTVIQOBB1Q/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/BaTVIQOBB1Q/hqdefault.jpg',
     category: 'albums'
   },
   {
@@ -196,7 +196,7 @@ export const albumSongs = [
     coSinger: 'Jaydeep Vaidya',
     type: 'Duet',
     youtubeId: 'oipndPDt5OM',
-    thumbnail: 'https://img.youtube.com/vi/oipndPDt5OM/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/oipndPDt5OM/hqdefault.jpg',
     category: 'albums'
   }
 ]
@@ -210,7 +210,7 @@ export const marathiMovieSongs = [
     coSinger: 'Avadhoot Gupte',
     type: 'Duet',
     youtubeId: 'jxJgF6hsxo8',
-    thumbnail: 'https://img.youtube.com/vi/jxJgF6hsxo8/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/jxJgF6hsxo8/hqdefault.jpg',
     category: 'marathi'
   },
   {
@@ -220,7 +220,7 @@ export const marathiMovieSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'Solo',
     youtubeId: '9h7gPHeBM9o',
-    thumbnail: 'https://img.youtube.com/vi/9h7gPHeBM9o/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/9h7gPHeBM9o/hqdefault.jpg',
     category: 'marathi'
   }
 ]
@@ -232,7 +232,7 @@ export const hindiSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'Devotional',
     youtubeId: '6XMotvIZ_Mk',
-    thumbnail: 'https://img.youtube.com/vi/6XMotvIZ_Mk/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/6XMotvIZ_Mk/hqdefault.jpg',
     category: 'hindi'
   },
   {
@@ -241,7 +241,7 @@ export const hindiSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'Devotional',
     youtubeId: 'juXFhTEyieM',
-    thumbnail: 'https://img.youtube.com/vi/juXFhTEyieM/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/juXFhTEyieM/hqdefault.jpg',
     category: 'hindi'
   },
   {
@@ -250,7 +250,7 @@ export const hindiSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'Devotional',
     youtubeId: 'giVfxmBine4',
-    thumbnail: 'https://img.youtube.com/vi/giVfxmBine4/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/giVfxmBine4/hqdefault.jpg',
     category: 'hindi'
   }
 ]
@@ -263,7 +263,7 @@ export const internationalSongs = [
     type: 'International',
     youtubeId: 'oiHY2EBKmOY',
     year: '2023',
-    thumbnail: 'https://img.youtube.com/vi/oiHY2EBKmOY/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/oiHY2EBKmOY/hqdefault.jpg',
     category: 'international',
     description: 'Released at Tomorrowland Festival'
   },
@@ -273,7 +273,7 @@ export const internationalSongs = [
     artist: 'Rajeshwari Pawar',
     type: 'International',
     youtubeId: 'F21m8camePk',
-    thumbnail: 'https://img.youtube.com/vi/F21m8camePk/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/F21m8camePk/hqdefault.jpg',
     category: 'international'
   }
 ]
@@ -288,7 +288,7 @@ export const discographyData = [
     type: 'Title Song',
     youtubeId: 'YLkSSg97-zU',
     year: '2024',
-    thumbnail: 'https://img.youtube.com/vi/YLkSSg97-zU/maxresdefault.jpg',
+    thumbnail: 'https://img.youtube.com/vi/YLkSSg97-zU/hqdefault.jpg',
     category: 'marathi'
   },
   ...latestMovieSongs,
@@ -303,7 +303,7 @@ export const showreelData = {
   youtubeId: 'rbXwotu8bo8',
   title: 'Rajeshwari Pawar - Showreel',
   description: 'A compilation of performances and playback songs',
-  thumbnail: 'https://img.youtube.com/vi/rbXwotu8bo8/maxresdefault.jpg'
+  thumbnail: 'https://img.youtube.com/vi/rbXwotu8bo8/hqdefault.jpg'
 }
 
 export const collaborations = [

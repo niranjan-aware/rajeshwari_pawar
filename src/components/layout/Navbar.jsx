@@ -20,6 +20,7 @@ const Navbar = () => {
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'music', label: 'Music' },
+    { id: 'playlists', label: 'Playlists' },
     { id: 'awards', label: 'Awards' },
     { id: 'gallery', label: 'Gallery' },
     { id: 'contact', label: 'Contact' }

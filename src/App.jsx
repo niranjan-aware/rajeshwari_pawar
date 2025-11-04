@@ -7,6 +7,7 @@ import AboutSection from './components/about/AboutSection'
 import LatestWork from './components/music/LatestWork'
 import ShowreelSection from './components/showreel/ShowreelSection'
 import Discography from './components/music/Discography'
+import PlaylistsSection from './components/playlists/PlaylistsSection'
 import AwardsSection from './components/awards/AwardsSection'
 import RealityShowsSection from './components/reality-shows/RealityShowsSection'
 import GallerySection from './components/gallery/GallerySection'
@@ -57,6 +58,7 @@ function App() {
         <LatestWork />
         <ShowreelSection />
         <Discography />
+        <PlaylistsSection />
         <AwardsSection />
         <RealityShowsSection />
         <GallerySection />
