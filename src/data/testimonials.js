@@ -11,7 +11,7 @@ export const testimonialsData = [
   {
     id: 'rajesh-agarwal',
     name: 'Rajesh Agarwal',
-    role: 'Music Director',
+    role: 'Music Event Orgaiser',
     image: '/images/testimonials/rajesh-agarwal.jpg',
     quote: 'Rajeshwari is an amazing singer and human. Always a treat to work with her. She comes 100% prepared with her work.',
     rating: 5
@@ -19,7 +19,7 @@ export const testimonialsData = [
   {
     id: 'aniket-barwekar',
     name: 'Aniket Barwekar',
-    role: 'Music Composer',
+    role: 'Engineer, Businessman',
     image: '/images/testimonials/aniket-barwekar.jpg',
     quote: 'Rajeshwari is a multi talented artist with humble nature. She has a bright future ahead.',
     rating: 5
@@ -27,7 +27,7 @@ export const testimonialsData = [
   {
     id: 'rakhi-dhamale',
     name: 'Rakhi Dhamale',
-    role: 'Playback Singer',
+    role: 'Working Woman',
     image: '/images/testimonials/rakhi-dhamale.jpg',
     quote: 'Rajeshwari Pawar has a very sweet voice. I always enjoy listening to her songs.',
     rating: 5

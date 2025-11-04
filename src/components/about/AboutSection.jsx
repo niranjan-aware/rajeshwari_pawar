@@ -71,9 +71,8 @@ const AboutSection = () => {
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed">
-              Performed as Co-Singer with the legendary <span className="font-semibold text-pink-600">Bappi Lahiri</span> for 
-              8 years across India with over 1000+ live shows. Shared the stage with renowned artists including 
-              Sonu Nigam, Avadhoot Gupte, and Rahul Deshpande.
+              Performed 1000+ live shows across India with 8 years of extensive stage experience. Collaborated as Co-Singer with legendary <span className="font-semibold text-pink-600">Bappi Lahiri </span>  
+              and shared stages with renowned artists including Sonu Nigam, Avadhoot Gupte, and Rahul Deshpande in various solo and ensemble performances.
             </p>
 
             <div className="flex flex-wrap gap-3">
