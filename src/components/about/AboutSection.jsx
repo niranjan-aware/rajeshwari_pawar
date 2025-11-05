@@ -71,7 +71,7 @@ const AboutSection = () => {
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed">
-              Performed 1000+ live shows across India with 8 years of extensive stage experience. Collaborated as Co-Singer with legendary <span className="font-semibold text-pink-600">Bappi Lahiri </span>  
+              Performed 1000+ live shows across India with 8 years of extensive stage experience. Collaborated as Co-Singer 
               and shared stages with renowned artists including Sonu Nigam, Avadhoot Gupte, and Rahul Deshpande in various solo and ensemble performances.
             </p>
 
@@ -99,7 +99,7 @@ const AboutSection = () => {
 
       <HighlightCards />
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-16">
+      {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-16">
         {achievements.map((achievement, index) => (
           <ScrollReveal key={achievement.id} direction="up" delay={index * 0.1}>
             <motion.div
@@ -119,7 +119,7 @@ const AboutSection = () => {
             </motion.div>
           </ScrollReveal>
         ))}
-      </div>
+      </div> */}
 
       <QuoteCard />
 
