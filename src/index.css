@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 @import './styles/animations.css';
+@import './styles/targeted-fixes.css';
 
 @layer base {
   * {
