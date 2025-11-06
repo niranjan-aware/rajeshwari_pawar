@@ -31,7 +31,7 @@ const AwardsSection = () => {
     },
     {
       icon: FaAward,
-      number: 8,
+      number: 12,
       suffix: '+',
       label: 'Years Excellence',
       color: 'from-rose-500 to-pink-600'

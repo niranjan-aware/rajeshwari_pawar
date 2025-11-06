@@ -73,75 +73,7 @@ const TestimonialsSection = () => {
         ))}
       </div>
 
-      <ScrollReveal direction="up" delay={0.4}>
-        <div className="max-w-5xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-display font-bold text-gradient-pink text-center mb-12">
-            Collaboration Highlights
-          </h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <motion.div
-              whileHover={{ scale: 1.02, y: -5 }}
-              className="glass-pink rounded-2xl p-8 hover:shadow-glow-pink transition-all duration-300"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center flex-shrink-0 shadow-glow-pink">
-                  <FaMusic className="text-2xl text-white" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-display font-bold text-pink-600 mb-3">
-                    Music Directors
-                  </h4>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-pink-400 rounded-full"></span>
-                      Bappi Lahiri - 8 years collaboration
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-pink-400 rounded-full"></span>
-                      Rajesh Agarwal - Multiple projects
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-pink-400 rounded-full"></span>
-                      Aniket Barwekar - Music composer
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              whileHover={{ scale: 1.02, y: -5 }}
-              className="glass-pink rounded-2xl p-8 hover:shadow-glow-pink transition-all duration-300"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center flex-shrink-0 shadow-glow-pink">
-                  <FaTheaterMasks className="text-2xl text-white" />
-                </div>
-                <div>
-                  <h4 className="text-xl font-display font-bold text-pink-600 mb-3">
-                    Artists & Mentors
-                  </h4>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-rose-400 rounded-full"></span>
-                      Rakhi Dhamale - Playback Singer
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-rose-400 rounded-full"></span>
-                      Anjali Bhatawdekar - Dance Guru
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-rose-400 rounded-full"></span>
-                      Multiple industry professionals
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </ScrollReveal>
+      
 
       <ScrollReveal direction="up" delay={0.6}>
         <div className="mt-16 max-w-4xl mx-auto glass-strong rounded-3xl p-8 md:p-12 text-center">
