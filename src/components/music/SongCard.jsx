@@ -25,9 +25,10 @@ const SongCard = ({ song, onClick }) => {
     >
       <div className="glass-pink rounded-2xl overflow-hidden shadow-glass hover:shadow-glow-pink transition-all duration-300">
         <div className="relative aspect-video overflow-hidden">
-          <img 
+          <img
             src={song.thumbnail}
-            alt={song.title}
+            alt={`${song.title} - ${song.artist}`}
+            loading="lazy"
             className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-110 ${
               imageLoaded ? 'blur-0' : 'blur-md'
             }`}

@@ -237,7 +237,8 @@ const InstagramFeed = () => {
             >
               <img
                 src={post.image}
-                alt={post.caption}
+                alt={`Rajeshwari Pawar - ${post.caption}`}
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
 

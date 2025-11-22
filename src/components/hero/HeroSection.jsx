@@ -147,9 +147,11 @@ const HeroSection = () => {
                     transition={{ duration: 0.3 }}
                     className="aspect-square rounded-full overflow-hidden border-8 border-white shadow-2xl"
                   >
-                    <img 
+                    <img
                       src={singerImages.about}
-                      alt="Rajeshwari Pawar"
+                      alt="Rajeshwari Pawar - Professional Playback Singer"
+                      loading="eager"
+                      fetchPriority="high"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </motion.div>

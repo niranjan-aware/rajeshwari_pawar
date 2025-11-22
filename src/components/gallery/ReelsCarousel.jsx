@@ -53,9 +53,10 @@ const ReelsCarousel = () => {
             transition={{ duration: 0.3 }}
             className="relative w-full h-full"
           >
-            <img 
+            <img
               src={reels[currentIndex].image}
-              alt={reels[currentIndex].title}
+              alt={`${reels[currentIndex].title} - Rajeshwari Pawar`}
+              loading="lazy"
               className="w-full h-full object-cover"
             />
 
