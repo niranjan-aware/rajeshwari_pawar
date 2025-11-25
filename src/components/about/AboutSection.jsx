@@ -30,9 +30,10 @@ const AboutSection = () => {
                 transition={{ duration: 0.3 }}
                 className="relative z-10"
               >
-                <img 
+                <img
                   src={singerImages.about}
-                  alt="Rajeshwari Pawar"
+                  alt="Rajeshwari Pawar - Playback Singer from Pune"
+                  loading="lazy"
                   className="w-full rounded-3xl shadow-2xl"
                 />
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-pink-500/20 to-transparent" />
@@ -90,9 +91,7 @@ const AboutSection = () => {
               </span>
             </div>
 
-            <Button variant="champagne" size="md" icon={FaDownload}>
-              Download Press Kit
-            </Button>
+           
           </div>
         </ScrollReveal>
       </div>

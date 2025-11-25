@@ -73,6 +73,7 @@ export default {
         'float': 'float 6s ease-in-out infinite',
         'float-delayed': 'float 6s ease-in-out 2s infinite',
         'float-slow': 'float 8s ease-in-out infinite',
+        'scroll': 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
       },
       keyframes: {
         float: {
@@ -84,11 +85,16 @@ export default {
           '100%': { backgroundPosition: '1000px 0' },
         },
         'glow-pink': {
-          '0%, 100%': { 
+          '0%, 100%': {
             boxShadow: '0 0 20px rgba(236, 72, 153, 0.3)',
           },
-          '50%': { 
+          '50%': {
             boxShadow: '0 0 40px rgba(236, 72, 153, 0.6)',
+          },
+        },
+        scroll: {
+          to: {
+            transform: 'translate(calc(-50% - 0.5rem))',
           },
         },
       },

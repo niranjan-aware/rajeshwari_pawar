@@ -38,5 +38,5 @@ export const socialLinks = [
 export const contactInfo = {
   email: 'srajeshwari.music@gmail.com',
   phone: '+91 8459974339',
-  location: 'Pune, Maharashtra, India'
+  location: 'Mumbai, Maharashtra, India'
 }

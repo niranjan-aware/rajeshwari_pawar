@@ -45,9 +45,10 @@ const ShowreelSection = () => {
             onClick={() => setIsPlaying(true)}
           >
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl">
-              <img 
+              <img
                 src={showreelData.thumbnail}
-                alt={showreelData.title}
+                alt={`${showreelData.title} - Rajeshwari Pawar Performance Highlights`}
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
