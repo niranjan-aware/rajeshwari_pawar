@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import SectionHeading from '../ui/SectionHeading'
 import SongCard from './SongCard'
@@ -10,10 +10,18 @@ import { discographyData, categories, collaborations } from '../../data/songs'
 const Discography = () => {
   const [activeCategory, setActiveCategory] = useState('all')
   const [selectedVideo, setSelectedVideo] = useState(null)
+  const [showAll, setShowAll] = useState(false)
 
-  const filteredSongs = activeCategory === 'all' 
-    ? discographyData 
+  const filteredSongs = activeCategory === 'all'
+    ? discographyData
     : discographyData.filter(song => song.category === activeCategory)
+
+  const displayedSongs = showAll ? filteredSongs : filteredSongs.slice(0, 6)
+  const hasMore = filteredSongs.length > 6
+
+  useEffect(() => {
+    setShowAll(false)
+  }, [activeCategory])
 
   const categoryIcons = {
     all: FaMusic,
@@ -74,14 +82,14 @@ const Discography = () => {
           transition={{ duration: 0.3 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {filteredSongs.map((song, index) => (
+          {displayedSongs.map((song, index) => (
             <motion.div
               key={song.id}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              <SongCard 
+              <SongCard
                 song={song}
                 onClick={() => setSelectedVideo(song)}
               />
@@ -89,6 +97,44 @@ const Discography = () => {
           ))}
         </motion.div>
       </AnimatePresence>
+
+      {hasMore && !showAll && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+          className="flex justify-center mt-12"
+        >
+          <motion.button
+            onClick={() => setShowAll(true)}
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-full shadow-glow-pink hover:shadow-glow-pink-strong transition-all duration-300 flex items-center gap-2"
+          >
+            <FaMusic className="text-lg" />
+            <span>See More Videos ({filteredSongs.length - 6} more)</span>
+          </motion.button>
+        </motion.div>
+      )}
+
+      {showAll && hasMore && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+          className="flex justify-center mt-12"
+        >
+          <motion.button
+            onClick={() => setShowAll(false)}
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-4 glass-pink text-pink-600 font-semibold rounded-full hover:shadow-glass-pink transition-all duration-300 flex items-center gap-2"
+          >
+            <FaMusic className="text-lg" />
+            <span>Show Less</span>
+          </motion.button>
+        </motion.div>
+      )}
 
       {filteredSongs.length === 0 && (
         <motion.div

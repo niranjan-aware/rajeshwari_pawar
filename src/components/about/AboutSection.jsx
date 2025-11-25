@@ -91,9 +91,7 @@ const AboutSection = () => {
               </span>
             </div>
 
-            <Button variant="champagne" size="md" icon={FaDownload}>
-              Download Press Kit
-            </Button>
+           
           </div>
         </ScrollReveal>
       </div>
