@@ -14,7 +14,7 @@
 
   body {
     @apply font-body antialiased;
-    @apply bg-gradient-to-br from-pink-50 via-cream-50 to-rose-50;
+    @apply bg-white;
     @apply text-gray-900;
     overflow-x: hidden;
   }

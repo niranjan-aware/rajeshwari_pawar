@@ -42,14 +42,6 @@ function App() {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-      <div className="fixed inset-0 bg-gradient-to-br from-pink-50 via-cream-50 to-rose-50 -z-10"></div>
-      
-      <div className="fixed inset-0 opacity-30 -z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl animate-float"></div>
-        <div className="absolute top-40 right-10 w-96 h-96 bg-rose-300 rounded-full mix-blend-multiply filter blur-3xl animate-float-delayed"></div>
-        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-champagne-300 rounded-full mix-blend-multiply filter blur-3xl animate-float-slow"></div>
-      </div>
-
       <Navbar />
       
       <main>

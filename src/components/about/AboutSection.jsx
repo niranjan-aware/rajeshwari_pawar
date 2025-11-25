@@ -1,22 +1,31 @@
-import { motion } from 'framer-motion'
-import SectionHeading from '../ui/SectionHeading'
-import HighlightCards from './HighlightCards'
-import QuoteCard from './QuoteCard'
-import AnimatedCounter from '../ui/AnimatedCounter'
-import Button from '../ui/Button'
-import ParallaxWrapper from '../common/ParallaxWrapper'
-import ScrollReveal from '../common/ScrollReveal'
-import { FaDownload, FaAward, FaMicrophone, FaTv, FaGlobeAsia, FaCertificate, FaBuilding, FaUserGraduate } from 'react-icons/fa'
-import { singerImages } from '../../utils/helpers'
-import { achievements } from '../../data/awards'
+import { motion } from "framer-motion";
+import SectionHeading from "../ui/SectionHeading";
+import HighlightCards from "./HighlightCards";
+import QuoteCard from "./QuoteCard";
+import AnimatedCounter from "../ui/AnimatedCounter";
+import Button from "../ui/Button";
+import ParallaxWrapper from "../common/ParallaxWrapper";
+import ScrollReveal from "../common/ScrollReveal";
+import {
+  FaDownload,
+  FaAward,
+  FaMicrophone,
+  FaTv,
+  FaGlobeAsia,
+  FaCertificate,
+  FaBuilding,
+  FaUserGraduate,
+} from "react-icons/fa";
+import { singerImages } from "../../utils/helpers";
+import { achievements } from "../../data/awards";
 
 const AboutSection = () => {
   return (
     <section id="about" className="section-container relative overflow-hidden">
-      <div className="absolute top-20 right-0 w-96 h-96 bg-pink-200 rounded-full blur-3xl opacity-30 -z-10" />
+      {/* <div className="absolute top-20 right-0 w-96 h-96 bg-pink-200 rounded-full blur-3xl opacity-30 -z-10" />
       <div className="absolute bottom-20 left-0 w-80 h-80 bg-rose-200 rounded-full blur-3xl opacity-30 -z-10" />
-      
-      <SectionHeading 
+       */}
+      <SectionHeading
         title="About Me"
         subtitle="Professional Playback Singer from Pune, Maharashtra"
       />
@@ -38,18 +47,22 @@ const AboutSection = () => {
                 />
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-pink-500/20 to-transparent" />
               </motion.div>
-              
+
               <motion.div
                 animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="absolute -top-6 -right-6 w-24 h-24 glass-pink rounded-full flex items-center justify-center shadow-glow-pink"
               >
                 <FaMicrophone className="text-3xl text-pink-600" />
               </motion.div>
-              
+
               <motion.div
                 animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="absolute -bottom-6 -left-6 w-20 h-20 glass-rose rounded-full flex items-center justify-center shadow-glass"
               >
                 <FaAward className="text-2xl text-rose-600" />
@@ -63,35 +76,27 @@ const AboutSection = () => {
             <h3 className="text-3xl md:text-4xl font-display font-bold text-gradient-pink">
               Bringing Melodies to Life
             </h3>
-            
+
             <p className="text-lg text-gray-700 leading-relaxed">
-              Professional playback singer with extensive experience in Marathi and Hindi cinema. 
-              Featured in the latest movie <span className="font-semibold text-pink-600">SAJANA</span> (Released June 27, 2025) 
-              with 4 songs including duets with <span className="font-semibold text-pink-600">Sonu Nigam</span> and 
-              <span className="font-semibold text-pink-600"> Adarsh Shinde</span>.
-            </p>
-            
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Performed 1000+ live shows across India with 8 years of extensive stage experience. Collaborated as Co-Singer 
-              and shared stages with renowned artists including Sonu Nigam, Avadhoot Gupte, and Rahul Deshpande in various solo and ensemble performances.
+              Professional playback singer with extensive experience in Marathi
+              and Hindi cinema. Featured in the latest movie{" "}
+              <span className="font-semibold text-pink-600">SAJANA</span>{" "}
+              (Released June 27, 2025) with 4 songs including duets with{" "}
+              <span className="font-semibold text-pink-600">Sonu Nigam</span>{" "}
+              and
+              <span className="font-semibold text-pink-600">
+                {" "}
+                Adarsh Shinde
+              </span>
+              .
             </p>
 
-            <div className="flex flex-wrap gap-3">
-              <span className="px-4 py-2 glass-pink rounded-full text-sm font-semibold text-pink-600">
-                Playback Singer
-              </span>
-              <span className="px-4 py-2 glass-pink rounded-full text-sm font-semibold text-pink-600">
-                Live Performer
-              </span>
-              <span className="px-4 py-2 glass-pink rounded-full text-sm font-semibold text-pink-600">
-                Reality Show Finalist
-              </span>
-              <span className="px-4 py-2 glass-pink rounded-full text-sm font-semibold text-pink-600">
-                Interior Designer
-              </span>
-            </div>
-
-           
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Performed 1000+ live shows across India with 8 years of extensive
+              stage experience. Collaborated as Co-Singer and shared stages with
+              renowned artists including Sonu Nigam, Avadhoot Gupte, and Rahul
+              Deshpande in various solo and ensemble performances.
+            </p>
           </div>
         </ScrollReveal>
       </div>
@@ -120,54 +125,106 @@ const AboutSection = () => {
         ))}
       </div> */}
 
-      <QuoteCard />
+      {/* <QuoteCard /> */}
 
-      <ScrollReveal direction="up" delay={0.2}>
-        <div className="glass-strong rounded-3xl p-8 md:p-12 mb-12">
-          <h3 className="text-2xl md:text-3xl font-display font-bold text-gradient-pink mb-8 text-center">
-            Career Highlights
-          </h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center flex-shrink-0 shadow-glow-pink">
-                <FaMicrophone className="text-white text-xl" />
-              </div>
-              <div>
-                <h4 className="font-display font-semibold text-pink-600 mb-2">Latest Release</h4>
-                <p className="text-sm text-gray-600">4 songs in SAJANA movie with Sonu Nigam</p>
-              </div>
-            </div>
+      <div className="mb-12">
+        <h3 className="text-2xl md:text-3xl font-display font-bold text-gradient-pink mb-8 text-center">
+          Career Highlights
+        </h3>
 
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center flex-shrink-0 shadow-glow-pink">
-                <FaTv className="text-white text-xl" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <ScrollReveal direction="up" delay={0.1}>
+            <motion.div
+              whileHover={{ scale: 1.03, y: -5 }}
+              className="glass-strong rounded-2xl overflow-hidden shadow-lg hover:shadow-glow-pink transition-all duration-300"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={singerImages.gallery3}
+                  alt="Latest Release - SAJANA Movie"
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-3 left-3 w-10 h-10 rounded-full bg-gradient-to-br from-pink-400 to-rose-400 flex items-center justify-center shadow-lg">
+                  <FaMicrophone className="text-white text-sm" />
+                </div>
               </div>
-              <div>
-                <h4 className="font-display font-semibold text-pink-600 mb-2">Reality Shows</h4>
-                <p className="text-sm text-gray-600">Finalist on Colors Marathi & ETV Marathi</p>
+              <div className="p-5">
+                <h4 className="font-display font-semibold text-pink-600 mb-2">
+                  Latest Release
+                </h4>
+                <p className="text-sm text-gray-600">
+                  4 songs in SAJANA movie with Sonu Nigam
+                </p>
               </div>
-            </div>
+            </motion.div>
+          </ScrollReveal>
 
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center flex-shrink-0 shadow-glow-pink">
-                <FaGlobeAsia className="text-white text-xl" />
+          <ScrollReveal direction="up" delay={0.2}>
+            <motion.div
+              whileHover={{ scale: 1.03, y: -5 }}
+              className="glass-strong rounded-2xl overflow-hidden shadow-lg hover:shadow-glow-pink transition-all duration-300"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={singerImages.gallery5}
+                  alt="Reality Shows - TV Appearances"
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-3 left-3 w-10 h-10 rounded-full bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center shadow-lg">
+                  <FaTv className="text-white text-sm" />
+                </div>
               </div>
-              <div>
-                <h4 className="font-display font-semibold text-pink-600 mb-2">International</h4>
-                <p className="text-sm text-gray-600">2 songs released at Tomorrowland Festival</p>
+              <div className="p-5">
+                <h4 className="font-display font-semibold text-pink-600 mb-2">
+                  Reality Shows
+                </h4>
+                <p className="text-sm text-gray-600">
+                  Finalist on Colors Marathi & ETV Marathi
+                </p>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </ScrollReveal>
+
+          <ScrollReveal direction="up" delay={0.3}>
+            <motion.div
+              whileHover={{ scale: 1.03, y: -5 }}
+              className="glass-strong rounded-2xl overflow-hidden shadow-lg hover:shadow-glow-pink transition-all duration-300"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={singerImages.gallery7}
+                  alt="International - Tomorrowland Festival"
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-3 left-3 w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center shadow-lg">
+                  <FaGlobeAsia className="text-white text-sm" />
+                </div>
+              </div>
+              <div className="p-5">
+                <h4 className="font-display font-semibold text-pink-600 mb-2">
+                  International
+                </h4>
+                <p className="text-sm text-gray-600">
+                  2 songs released at Tomorrowland Festival
+                </p>
+              </div>
+            </motion.div>
+          </ScrollReveal>
         </div>
-      </ScrollReveal>
+      </div>
 
       <ScrollReveal direction="up" delay={0.25}>
         <div className="glass-strong rounded-3xl p-8 md:p-12 mb-12">
           <h3 className="text-2xl md:text-3xl font-display font-bold text-gradient-pink mb-8 text-center">
             Training & Mentorship
           </h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
               whileHover={{ scale: 1.02, y: -5 }}
@@ -183,15 +240,21 @@ const AboutSection = () => {
                   </h4>
                   <div className="space-y-2">
                     <p className="text-gray-700 leading-relaxed">
-                      <span className="font-semibold text-pink-600">Mrs. Aparna Sant</span>
+                      <span className="font-semibold text-pink-600">
+                        Mrs. Aparna Sant
+                      </span>
                     </p>
                     <p className="text-gray-700 leading-relaxed">
-                      <span className="font-semibold text-pink-600">Dr. Sanjeev Shende</span>
+                      <span className="font-semibold text-pink-600">
+                        Dr. Sanjeev Shende
+                      </span>
                     </p>
                   </div>
                   <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-pink-100 to-rose-100 rounded-full">
                     <FaUserGraduate className="text-pink-600 text-sm" />
-                    <span className="text-sm font-semibold text-pink-700">Classical Training</span>
+                    <span className="text-sm font-semibold text-pink-700">
+                      Classical Training
+                    </span>
                   </div>
                 </div>
               </div>
@@ -210,14 +273,19 @@ const AboutSection = () => {
                     Bharatnatyam Training
                   </h4>
                   <p className="text-gray-700 leading-relaxed mb-2">
-                    <span className="font-semibold text-pink-600">Mrs. Anjali Bhatavdekar</span>
+                    <span className="font-semibold text-pink-600">
+                      Mrs. Anjali Bhatavdekar
+                    </span>
                   </p>
                   <p className="text-sm text-gray-600 mb-3">
-                    Trained classical dancer with Bharatnatyam Vishaarad certification
+                    Trained classical dancer with Bharatnatyam Vishaarad
+                    certification
                   </p>
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-rose-100 to-pink-100 rounded-full">
                     <FaUserGraduate className="text-rose-600 text-sm" />
-                    <span className="text-sm font-semibold text-rose-700">Vishaarad Certified</span>
+                    <span className="text-sm font-semibold text-rose-700">
+                      Vishaarad Certified
+                    </span>
                   </div>
                 </div>
               </div>
@@ -226,8 +294,16 @@ const AboutSection = () => {
 
           <div className="mt-8 p-6 bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl border-2 border-pink-200">
             <p className="text-center text-gray-700 leading-relaxed">
-              Trained under renowned gurus in both <span className="font-semibold text-pink-600">Classical Music</span> and 
-              <span className="font-semibold text-rose-600"> Bharatnatyam Dance</span>, combining technical excellence with artistic expression
+              Trained under renowned gurus in both{" "}
+              <span className="font-semibold text-pink-600">
+                Classical Music
+              </span>{" "}
+              and
+              <span className="font-semibold text-rose-600">
+                {" "}
+                Bharatnatyam Dance
+              </span>
+              , combining technical excellence with artistic expression
             </p>
           </div>
         </div>
@@ -238,7 +314,7 @@ const AboutSection = () => {
           <h3 className="text-2xl md:text-3xl font-display font-bold text-gradient-pink mb-8 text-center">
             Professional Credentials
           </h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
               whileHover={{ scale: 1.02, y: -5 }}
@@ -253,11 +329,16 @@ const AboutSection = () => {
                     Registered Singer
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Registered Singer in <span className="font-semibold text-pink-600">Akhil Bhartiya Marathi Chitrapat Mahamandal</span>
+                    Registered Singer in{" "}
+                    <span className="font-semibold text-pink-600">
+                      Akhil Bhartiya Marathi Chitrapat Mahamandal
+                    </span>
                   </p>
                   <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-pink-100 to-rose-100 rounded-full">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-semibold text-pink-700">Certified Professional</span>
+                    <span className="text-sm font-semibold text-pink-700">
+                      Certified Professional
+                    </span>
                   </div>
                 </div>
               </div>
@@ -276,11 +357,17 @@ const AboutSection = () => {
                     Production House
                   </h4>
                   <p className="text-gray-700 leading-relaxed">
-                    Founder & Owner of <span className="font-semibold text-pink-600">Rajmudra Enterprises</span> - Registered Production House
+                    Founder & Owner of{" "}
+                    <span className="font-semibold text-pink-600">
+                      Rajmudra Enterprises
+                    </span>{" "}
+                    - Registered Production House
                   </p>
                   <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-rose-100 to-pink-100 rounded-full">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-semibold text-rose-700">Active Enterprise</span>
+                    <span className="text-sm font-semibold text-rose-700">
+                      Active Enterprise
+                    </span>
                   </div>
                 </div>
               </div>
@@ -294,7 +381,9 @@ const AboutSection = () => {
                   <FaCertificate className="text-white text-xl" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-pink-600">Official Registration</p>
+                  <p className="text-sm font-semibold text-pink-600">
+                    Official Registration
+                  </p>
                   <p className="text-xs text-gray-600">Industry Recognized</p>
                 </div>
               </div>
@@ -304,7 +393,9 @@ const AboutSection = () => {
                   <FaBuilding className="text-white text-xl" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-rose-600">Registered Enterprise</p>
+                  <p className="text-sm font-semibold text-rose-600">
+                    Registered Enterprise
+                  </p>
                   <p className="text-xs text-gray-600">Licensed Production</p>
                 </div>
               </div>
@@ -313,7 +404,7 @@ const AboutSection = () => {
         </div>
       </ScrollReveal>
     </section>
-  )
-}
+  );
+};
 
-export default AboutSection
+export default AboutSection;
