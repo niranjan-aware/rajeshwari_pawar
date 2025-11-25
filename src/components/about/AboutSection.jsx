@@ -18,7 +18,7 @@ const AboutSection = () => {
       
       <SectionHeading 
         title="About Me"
-        subtitle="Professional Playback Singer from Pune, Maharashtra"
+        subtitle="Professional Playback Singer from Mumbai, Maharashtra"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 mt-16">
@@ -32,7 +32,7 @@ const AboutSection = () => {
               >
                 <img
                   src={singerImages.about}
-                  alt="Rajeshwari Pawar - Playback Singer from Pune"
+                  alt="Rajeshwari Pawar - Playback Singer from Mumbai"
                   loading="lazy"
                   className="w-full rounded-3xl shadow-2xl"
                 />
