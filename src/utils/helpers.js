@@ -28,6 +28,9 @@ import gallery27 from '../assets/GalleryImages/galleryImg_27.JPG'
 import gallery28 from '../assets/GalleryImages/galleryImg_28.JPG'
 // import gallery29 from '../assets/GalleryImages/galleryImg_29.HEIC'
 // import gallery30 from '../assets/GalleryImages/galleryImg_30.HEIC'
+import aboutImage from '../assets/About.jpg'
+import heroImage from '../assets/Hero-section.webp'
+
 
 export const truncateText = (text, maxLength) => {
   if (text.length <= maxLength) return text
@@ -84,11 +87,10 @@ export const getUnsplashImage = (query, width = 800, height = 600) => {
   return `https://images.unsplash.com/photo-${query}?w=${width}&h=${height}&fit=crop&q=80`
 }
 
-import aboutImage from '../assets/211162.jpg'
-import heroImage from '../assets/214677.jpg'
+
 export const singerImages = {
   hero: heroImage,
-  about: heroImage,
+  about: aboutImage,
   performance1: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&q=80',
   performance2: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&h=600&fit=crop&q=80',
   performance3: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800&h=600&fit=crop&q=80',

@@ -29,7 +29,7 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 left-10 w-96 h-96 bg-rose-300 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-float-delayed" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col-reverse lg:flex-row gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -146,14 +146,14 @@ const HeroSection = () => {
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
-                    className="aspect-square rounded-full overflow-hidden border-8 border-white shadow-2xl"
+                    className="aspect-square rounded-full overflow-hidden border-8 bg-white border-white shadow-2xl"
                   >
                     <img
-                      src={singerImages.about}
+                      src={singerImages.hero}
                       alt="Rajeshwari Pawar - Professional Playback Singer"
                       loading="eager"
                       fetchPriority="high"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-fill object-top group-hover:scale-110 transition-transform duration-500"
                     />
                   </motion.div>
                 </div>

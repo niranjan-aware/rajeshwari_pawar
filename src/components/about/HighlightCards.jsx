@@ -1,60 +1,89 @@
 import { motion } from 'framer-motion'
 import { FaMicrophone, FaTheaterMasks, FaPaintBrush, FaTrophy } from 'react-icons/fa'
-import GlassCard from '../ui/GlassCard'
 
 const HighlightCards = () => {
   const highlights = [
     {
       icon: FaMicrophone,
       title: 'Playback Singer',
-      description: 'Featured in major Marathi `movies with renowned music directors',
-      color: 'from-pink-400 to-rose-400'
+      description: 'Featured in major Marathi movies with renowned music directors',
+      gradient: 'from-pink-500 via-rose-500 to-pink-600',
+      iconBg: 'bg-pink-500',
+      delay: 0
     },
     {
       icon: FaTheaterMasks,
       title: 'Bharatnatyam Vishaarad',
       description: 'Trained classical dancer with expertise in traditional Indian dance forms',
-      color: 'from-rose-400 to-pink-500'
+      gradient: 'from-rose-500 via-pink-500 to-rose-600',
+      iconBg: 'bg-rose-500',
+      delay: 0.1
     },
     {
       icon: FaPaintBrush,
       title: 'Interior Designer',
       description: 'Professional interior designer combining creativity with technical skills',
-      color: 'from-pink-500 to-rose-500'
+      gradient: 'from-pink-600 via-rose-600 to-pink-700',
+      iconBg: 'bg-pink-600',
+      delay: 0.2
     },
     {
       icon: FaTrophy,
       title: 'Masters in English Literature',
       description: 'from Pune University',
-      color: 'from-rose-500 to-pink-600'
+      gradient: 'from-rose-600 via-pink-600 to-rose-700',
+      iconBg: 'bg-rose-600',
+      delay: 0.3
     }
   ]
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {highlights.map((item, index) => (
         <motion.div
           key={index}
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
+          transition={{ duration: 0.5, delay: item.delay }}
+          whileHover={{ y: -8 }}
+          className="group"
         >
-          <GlassCard className="h-full text-center hover:shadow-glow-pink group cursor-pointer">
-            <motion.div
-              whileHover={{ scale: 1.1, rotate: 360 }}
-              transition={{ duration: 0.5 }}
-              className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br ${item.color} flex items-center justify-center shadow-glow-pink`}
-            >
-              <item.icon className="text-3xl text-white" />
-            </motion.div>
-            <h3 className="text-xl font-display font-bold text-pink-600 mb-3">
-              {item.title}
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+          <div className="relative flex flex-col items-center justify-between h-full bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-pink-100">
+            
+            <div className={`absolute inset-0 rounded-2xl  opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl`} />
+
+            {/* Icon container */}
+            <div className="flex items-center gap-4 mb-4">
+              <motion.div
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.6 }}
+                className={`${item.iconBg} w-16 h-16 rounded-xl flex items-center justify-center shadow-md`}
+              >
+                <item.icon className="text-3xl text-white" />
+              </motion.div>
+
+              <div className="flex-1">
+                <h3 className="text-xl font-display font-bold text-gray-800 group-hover:text-pink-600 transition-colors">
+                  {item.title}
+                </h3>
+              </div>
+            </div>
+
+            {/* Description */}
+            <p className="text-gray-600 leading-relaxed">
               {item.description}
             </p>
-          </GlassCard>
+
+            {/* Bottom accent line */}
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: '100%' }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: item.delay + 0.2 }}
+              className={`h-1 bg-gradient-to-r ${item.gradient} rounded-full mt-6`}
+            />
+          </div>
         </motion.div>
       ))}
     </div>

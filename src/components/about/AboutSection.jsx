@@ -48,13 +48,13 @@ const AboutSection = () => {
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-pink-500/20 to-transparent" />
               </motion.div>
 
-              <motion.div
+              {/* <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="absolute -top-6 -right-6 w-24 h-24 glass-pink rounded-full flex items-center justify-center shadow-glow-pink"
               >
                 <FaMicrophone className="text-3xl text-pink-600" />
-              </motion.div>
+              </motion.div> */}
 
               <motion.div
                 animate={{ y: [0, -10, 0] }}
@@ -71,7 +71,7 @@ const AboutSection = () => {
           </ParallaxWrapper>
         </ScrollReveal>
 
-        <ScrollReveal direction="right">
+        <ScrollReveal direction="right" className="flex flex-col gap-16 ">
           <div className="space-y-6">
             <h3 className="text-3xl md:text-4xl font-display font-bold text-gradient-pink">
               Bringing Melodies to Life
@@ -98,32 +98,13 @@ const AboutSection = () => {
               Deshpande in various solo and ensemble performances.
             </p>
           </div>
+          <HighlightCards />
         </ScrollReveal>
       </div>
 
-      <HighlightCards />
+      
 
-      {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-16">
-        {achievements.map((achievement, index) => (
-          <ScrollReveal key={achievement.id} direction="up" delay={index * 0.1}>
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="glass-pink rounded-2xl p-6 text-center shadow-glass hover:shadow-glow-pink transition-all duration-300"
-            >
-              <div className="text-4xl mb-3">{achievement.icon}</div>
-              <div className="text-4xl md:text-5xl font-bold text-gradient-pink mb-2">
-                <AnimatedCounter end={parseInt(achievement.number)} suffix={achievement.number.replace(/[0-9]/g, '')} />
-              </div>
-              <div className="text-sm font-semibold text-pink-600 mb-1">
-                {achievement.label}
-              </div>
-              <div className="text-xs text-gray-600">
-                {achievement.description}
-              </div>
-            </motion.div>
-          </ScrollReveal>
-        ))}
-      </div> */}
+      
 
       {/* <QuoteCard /> */}
 
