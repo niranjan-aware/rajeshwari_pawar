@@ -65,8 +65,9 @@ const HeroSection = () => {
               </p>
               <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                 Voice of{" "}
-                <span className="text-pink-600 font-semibold">Sajana</span> |
-                Co-Singer of Bappi Lahiri | 1000+ Live Shows
+                <span className="text-pink-600 font-semibold">Sajana</span> <br />
+                Co-Singer of Bappi Lahiri <br />
+                Performed 1000+ Live Shows Across India over 16 years
               </p>
             </motion.div>
 

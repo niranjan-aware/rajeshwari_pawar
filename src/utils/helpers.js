@@ -28,7 +28,7 @@ import gallery27 from '../assets/GalleryImages/galleryImg_27.JPG'
 import gallery28 from '../assets/GalleryImages/galleryImg_28.JPG'
 // import gallery29 from '../assets/GalleryImages/galleryImg_29.HEIC'
 // import gallery30 from '../assets/GalleryImages/galleryImg_30.HEIC'
-import aboutImage from '../assets/About.jpg'
+import aboutImage from '../assets/About.JPG'
 import heroImage from '../assets/Hero-section.webp'
 
 
