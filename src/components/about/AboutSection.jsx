@@ -82,11 +82,11 @@ const AboutSection = () => {
               and Hindi cinema. Featured in the latest movie{" "}
               <span className="font-semibold text-pink-600">SAJANA</span>{" "}
               (Released June 27, 2025) with 4 songs including duets with{" "}
-              <span className="font-semibold text-pink-600">Sonu Nigam</span>{" "}
+              <span className="font-semibold text-pink-600">Sonu Nigam, Adarsh Shinde</span>{" "}
               and
               <span className="font-semibold text-pink-600">
                 {" "}
-                Adarsh Shinde
+                Onkarswaroop Bagde
               </span>
               .
             </p>
