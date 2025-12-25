@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
-import { FaHeart, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaHeart, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 import { socialLinks, contactInfo } from '../../data/socialLinks'
 import { scrollToSection } from '../../utils/helpers'
+import {  Phone  } from 'lucide-react'
 
 const Footer = () => {
   const quickLinks = [
@@ -85,7 +86,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <FaPhone className="text-pink-500 mt-1 flex-shrink-0" />
+                <Phone className="text-pink-500 mt-1 flex-shrink-0" />
                 <a 
                   href={`tel:${contactInfo.phone}`}
                   className="text-gray-600 hover:text-pink-600 transition-colors"

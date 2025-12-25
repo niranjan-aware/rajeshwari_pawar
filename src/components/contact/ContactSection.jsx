@@ -2,8 +2,9 @@ import { motion } from 'framer-motion'
 import SectionHeading from '../ui/SectionHeading'
 import ContactForm from './ContactForm'
 import ScrollReveal from '../common/ScrollReveal'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaClock, FaMicrophone, FaMusic } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaClock, FaMicrophone, FaMusic } from 'react-icons/fa'
 import { contactInfo, socialLinks } from '../../data/socialLinks'
+import {  Phone  } from 'lucide-react'
 
 const ContactSection = () => {
   const contactMethods = [
@@ -15,7 +16,7 @@ const ContactSection = () => {
       color: 'from-pink-400 to-rose-400'
     },
     {
-      icon: FaPhone,
+      icon: Phone,
       title: 'Phone',
       value: contactInfo.phone,
       href: `tel:${contactInfo.phone}`,
