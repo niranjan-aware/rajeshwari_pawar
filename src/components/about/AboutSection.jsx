@@ -27,7 +27,7 @@ const AboutSection = () => {
        */}
       <SectionHeading
         title="About Me"
-        subtitle="Professional Playback Singer from Pune, Maharashtra"
+        subtitle="Professional Singer from Mumbai, Maharashtra"
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16 mt-16">
@@ -41,7 +41,7 @@ const AboutSection = () => {
               >
                 <img
                   src={singerImages.about}
-                  alt="Rajeshwari Pawar - Playback Singer from Pune"
+                  alt="Rajeshwari Pawar - Playback Singer from Mumbai"
                   loading="lazy"
                   className="w-full rounded-3xl shadow-2xl"
                 />
@@ -92,7 +92,7 @@ const AboutSection = () => {
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              Performed 1000+ live shows across India with 8 years of extensive
+              Performed 1000+ live shows across India with 16 years of extensive
               stage experience. Collaborated as Co-Singer and shared stages with
               renowned artists including Sonu Nigam, Avadhoot Gupte, and Rahul
               Deshpande in various solo and ensemble performances.
@@ -121,7 +121,7 @@ const AboutSection = () => {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src={singerImages.gallery3}
+                  src={singerImages.gallery32}
                   alt="Latest Release - SAJANA Movie"
                   loading="lazy"
                   className="w-full h-full object-cover object-top"
@@ -136,7 +136,7 @@ const AboutSection = () => {
                   Latest Release
                 </h4>
                 <p className="text-sm text-gray-600">
-                  4 songs in SAJANA movie with Sonu Nigam
+                  4 songs in SAJANA movie with Sonu Nigam & Onkarswaroop Bagde 
                 </p>
               </div>
             </motion.div>

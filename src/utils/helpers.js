@@ -26,6 +26,7 @@ import gallery25 from '../assets/GalleryImages/galleryImg_25.PNG'
 import gallery26 from '../assets/GalleryImages/galleryImg_26.JPG'
 import gallery27 from '../assets/GalleryImages/galleryImg_27.JPG'
 import gallery28 from '../assets/GalleryImages/galleryImg_28.JPG'
+import gallery32 from '../assets/GalleryImages/gallery_32.jpeg'
 // import gallery29 from '../assets/GalleryImages/galleryImg_29.HEIC'
 // import gallery30 from '../assets/GalleryImages/galleryImg_30.HEIC'
 import aboutImage from '../assets/About.JPG'
@@ -126,4 +127,5 @@ export const singerImages = {
   gallery26: gallery26,
   gallery27: gallery27,
   gallery28: gallery28,
+  gallery32: gallery32,
 }
