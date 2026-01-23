@@ -19,10 +19,10 @@ const Footer = () => {
   return (
     <footer className="relative bg-gradient-to-b from-pink-50 via-rose-50 to-pink-100 pt-20 pb-8">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-pink-300 to-transparent" />
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <FaEnvelope className="text-pink-500 mt-1 flex-shrink-0" />
-                <a 
+                <a
                   href={`mailto:${contactInfo.email}`}
                   className="text-gray-600 hover:text-pink-600 transition-colors break-all"
                 >
@@ -86,7 +86,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <FaPhone className="text-pink-500 mt-1 flex-shrink-0" />
-                <a 
+                <a
                   href={`tel:${contactInfo.phone}`}
                   className="text-gray-600 hover:text-pink-600 transition-colors"
                 >
@@ -137,17 +137,17 @@ const Footer = () => {
 
         <div className="border-t border-pink-200 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <motion.p 
+            <motion.p
               className="text-sm text-gray-600 text-center md:text-left"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              © 2025 Rajeshwari Pawar. All rights reserved.
+              © {new Date().getFullYear()} Rajeshwari Pawar. All rights reserved.
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               className="flex gap-6"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
